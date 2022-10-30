@@ -1,4 +1,4 @@
-package com.dollarsbank2.springboot.models;
+package com.dollarsbank2.springboot.model;
 
 public enum RoleEnum {
 	ROLE_USER,

@@ -1,4 +1,4 @@
-package com.dollarsbank2.springboot.models;
+package com.dollarsbank2.springboot.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,11 +19,12 @@ public class Role {
 	@Enumerated(EnumType.STRING)
 	@Column(length = 30)
 	private RoleEnum name;
+	
 	public Role() {
 		
 	}
 	public Role(RoleEnum name) {
-//		super();
+		super();
 		this.name = name;
 	}
 	public Long getId() {
