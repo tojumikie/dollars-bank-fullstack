@@ -7,6 +7,7 @@ class ListAccountComponent extends Component {
         this.state = {
             accounts: []
         }
+        this.register = this.register.bind(this);
     }
 
     componentDidMount() {
@@ -15,10 +16,17 @@ class ListAccountComponent extends Component {
         });
     }
 
+    register() {
+        this.props.history.push("/register")
+    }
+
     render() {
         return (
             <div>
                 <h2 className="text-center">List of Bank Accounts</h2>
+                <div className="row">
+                    <button className="btn btn-primary" onClick={this.register}> Link to create an account</button>
+                </div>
                 <div className = "row">
                     <table className='table table-striped table-bordered'>
                         <thead>
